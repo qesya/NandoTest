@@ -1,0 +1,6 @@
+module Pods_NandoTest {
+  umbrella header "Pods-NandoTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
