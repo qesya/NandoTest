@@ -8,6 +8,7 @@ type IRestaurantScreenProps = NativeStackScreenProps<
   RootStackParamList,
   'RestaurantScreen'
 >;
+
 const CustomBridgeScreen = (props: IRestaurantScreenProps) => {
   const [restaurants, setRestaurants] = useState<Array<Restaurant>>([]);
   const [loading, setLoading] = useState<boolean>(false);

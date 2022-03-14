@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestaurantView renders correctly 1`] = `
+<RNCSafeAreaView
+  edges={
+    Array [
+      "bottom",
+      "left",
+      "right",
+      "top",
+    ]
+  }
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "paddingHorizontal": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#1F1F1F",
+          "fontFamily": "Poppins-Light",
+          "fontSize": 24,
+          "letterSpacing": 2,
+          "marginVertical": 20,
+          "paddingHorizontal": 20,
+          "textAlign": "center",
+          "textTransform": "uppercase",
+        }
+      }
+    >
+      Nando's Restaurants
+    </Text>
+    <RCTScrollView
+      ItemSeparatorComponent={[Function]}
+      automaticallyAdjustsScrollIndicatorInsets={true}
+      contentContainerStyle={
+        Object {
+          "paddingBottom": 30,
+          "paddingHorizontal": -40,
+        }
+      }
+      contentInsetAdjustmentBehavior="automatic"
+      data={Array []}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      keyExtractor={[Function]}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      showsVerticalScrollIndicator={false}
+      stickyHeaderIndices={Array []}
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+        ]
+      }
+      testID="flatlist-restaurant"
+      viewabilityConfigCallbackPairs={Array []}
+    >
+      <View />
+    </RCTScrollView>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "backgroundColor": "#1F1F1F",
+            "borderRadius": 40,
+            "height": 40,
+            "justifyContent": "center",
+            "marginBottom": 10,
+          },
+          Object {
+            "marginVertical": 20,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Poppins-Light",
+            "fontSize": 14,
+          }
+        }
+      >
+        Back
+      </Text>
+    </View>
+  </View>
+</RNCSafeAreaView>
+`;

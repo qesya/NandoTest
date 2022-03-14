@@ -72,7 +72,9 @@ const RestaurantView = (props: Props) => {
             ItemSeparatorComponent={() => <View style={styles.itemSeparator} />}
           />
         ) : (
-          <Text style={styles.txtHeader}>Loading...</Text>
+          <Text style={styles.txtHeader} testID="LoadingText">
+            Loading...
+          </Text>
         )}
         <Button style={styles.btn} title="Back" onPress={props.onPressGoBack} />
       </View>

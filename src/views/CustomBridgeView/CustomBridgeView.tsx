@@ -20,7 +20,9 @@ const CustomBridgeView = ({appVersion, onPressGoBack}: Props) => {
       <View>
         <Text style={styles.txtHeader}>APP VERSION</Text>
         <Text style={styles.txtNote}>this value from native modules</Text>
-        <Text style={styles.txtAppVersion}>{appVersion}</Text>
+        <Text style={styles.txtAppVersion} testID="AppVersionText">
+          {appVersion}
+        </Text>
       </View>
       <Button style={styles.btn} title="Back" onPress={onPressGoBack} />
     </View>
