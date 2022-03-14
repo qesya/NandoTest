@@ -3,10 +3,8 @@ import renderer from 'react-test-renderer';
 import RestaurantScreen from './RestaurantScreen';
 
 const createTestProps = (props: Object) => ({
-  navigation: {
-    navigate: jest.fn(),
-  },
-  route: jest.fn(),
+  navigation: jest.fn<any, any>()(),
+  route: jest.fn<any, any>()(),
   ...props,
 });
 

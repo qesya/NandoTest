@@ -56,8 +56,9 @@ exports[`CustomBridgeView renders correctly 1`] = `
           "textTransform": "uppercase",
         }
       }
+      testID="AppVersionText"
     >
-      
+      1.0.1
     </Text>
   </View>
   <View

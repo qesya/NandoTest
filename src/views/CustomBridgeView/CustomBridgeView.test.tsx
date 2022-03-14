@@ -19,7 +19,7 @@ describe('CustomBridgeView', () => {
         appVersion={appVersion}
         onPressGoBack={() => jest.fn()}
       />,
-    );
-    expect(component.queryByTestId('AppVersionText')).toBe(appVersion);
+    ).getByTestId('AppVersionText');
+    expect(component).toBeDefined();
   });
 });
