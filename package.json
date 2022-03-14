@@ -28,7 +28,9 @@
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
     "babel-jest": "^26.6.3",
+    "detox": "^19.5.3",
     "eslint": "^7.14.0",
+    "eslint-plugin-detox": "^1.0.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.2",
     "react-dom": "^17.0.2",
@@ -55,5 +57,16 @@
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|@react-native|@react-navigation|@testing-library/react-native)"
     ]
+  },
+  "detox": {
+    "test-runner": "jest",
+    "configurations": {
+      "ios.release": {
+        "binaryPath": "./ios/build/Build/Products/Release-iphonesimulator/testReactNativeDetox.app",
+        "build": "xcodebuild -workspace ios/testReactNativeDetox.xcworkspace -configuration release -scheme testReactNativeDetox -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "name": "iPhone X"
+      }
+    }
   }
 }
